@@ -91,11 +91,17 @@ header{
 
 .page{
     opacity: 0;
-    transform: translateY(2px);
-    transition: opacity 250ms ease, transform 250ms ease;
+    transform: translateX(10px);
+    transition: opacity 300ms ease, transform 300ms ease;
 }
 
 .page.active{
     opacity: 1;
-    transform: translateY(0px);
+    transform: translateX(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .page {
+    transition: none;
+  }
 }

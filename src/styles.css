@@ -61,7 +61,7 @@ header{
 /* Container style */
 
 .container{
-    height: 100%;
+    height: 600px;
 }
 
 .header{
@@ -85,4 +85,17 @@ header{
     text-align: center;
     font-size: 18px;
     padding: 0px 128px;
+}
+
+/* Smooth transitions */
+
+.page{
+    opacity: 0;
+    transform: translateY(2px);
+    transition: opacity 250ms ease, transform 250ms ease;
+}
+
+.page.active{
+    opacity: 1;
+    transform: translateY(0px);
 }

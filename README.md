@@ -14,7 +14,6 @@ Have a good day reading this.
 - Navigation between **Home**, **Menu** and **About** sections.
 - Modular code structure with ES6 modules.
 
-
 ## Built With
 
 HTML, CSS, JavaScript (ES Modules) and Webpack (for bundling)
@@ -37,16 +36,15 @@ HTML, CSS, JavaScript (ES Modules) and Webpack (for bundling)
 3. Start the development server:
 
 ```bash
-    npx webpack serve
+    npm run dev
 ```
 
 ## Future Features:
 
-- [ ] Add a fading transition between each page so it doesn't feel as _instant_ as of now.
+- [x] Add a fading transition between each page so it doesn't feel as _instant_ as of now.
 - [ ] Extend the content of each page (It's looking quite empty right now)
 
 ## Some Notes
 
-- Why ```npx``` instead of ```npm```? Well I want to be able to run the development server directly without defining a custom ```npm``` script.
 - The background picture that I used: [Restaurant interior](https://www.freepik.com/free-photos-vectors/restaurant)
 - And some more notes in the future...

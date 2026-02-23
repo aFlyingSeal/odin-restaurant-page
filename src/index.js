@@ -8,8 +8,19 @@ const content = document.getElementById("content");
 const navBtns = document.querySelectorAll(".nav-btn");
 
 let currentPage = null;
+let isTransitioning = false;
+
+function setNavBtnDisabled(disabled){
+    navBtns.forEach(btn => btn.disabled = disabled);
+}
 
 function loadPage(createPage){
+    if (isTransitioning){
+        return;
+    }
+    isTransitioning = true;
+    setNavBtnDisabled(true);
+
     const newPage = createPage();
 
     if (currentPage){
@@ -24,7 +35,9 @@ function loadPage(createPage){
             });
 
             currentPage = newPage;
-        }, 250);
+            isTransitioning = false;
+            setNavBtnDisabled(false);
+        }, 300);
     }
     else{
         content.appendChild(newPage);
@@ -32,6 +45,8 @@ function loadPage(createPage){
             newPage.classList.add("active");
         });
         currentPage = newPage;
+        isTransitioning = false;
+        setNavBtnDisabled(false);
     }
 }
 

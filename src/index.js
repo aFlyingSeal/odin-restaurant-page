@@ -1,3 +1,11 @@
 import "./styles.css";
 
-console.log("Hello world!");
+import createHome from "./pages/home";
+
+const content = document.getElementById("content");
+
+function loadHomepage(){
+    content.appendChild(createHome());
+}
+
+loadHomepage();

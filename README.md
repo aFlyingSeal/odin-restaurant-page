@@ -6,7 +6,7 @@ Have a good day reading this.
 
 ---
 
-## Live Demo: [to-be-updated](#)
+## Live Demo: [odin-restaurant-page](https://aflyingseal.github.io/odin-restaurant-page/)
 
 ## Key Features
 

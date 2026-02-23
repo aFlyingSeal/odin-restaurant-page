@@ -1,6 +1,6 @@
 function createAbout(){
     const container = document.createElement("div");
-    container.classList.add("container");
+    container.classList.add("page", "container");
     container.innerHTML = `
         <div class="header">
             <h2>About Us</h2>

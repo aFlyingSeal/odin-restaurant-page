@@ -1,6 +1,6 @@
 function createHome(){
     const container = document.createElement("div");
-    container.classList.add("container");
+    container.classList.add("page", "container");
     container.innerHTML = `
         <div class="header">
             <h2>Welcome to My Restaurant!</h2>

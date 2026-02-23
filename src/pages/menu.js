@@ -1,6 +1,6 @@
 function createMenu(){
     const container = document.createElement("div");
-    container.classList.add("container");
+    container.classList.add("page", "container");
     container.innerHTML = `
         <div class="header">
             <h2>Our Restaurant Menu</h2>
